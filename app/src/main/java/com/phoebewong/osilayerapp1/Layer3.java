@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.ScaleAnimation;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Button;
 import android.content.Intent;
@@ -18,6 +19,7 @@ public class Layer3 extends AppCompatActivity {
 
     ImageView frontNetworkLayer;
     ImageView backNetworkLayer;
+    ImageButton homeButton;
 
     ScaleAnimation sato0 = new ScaleAnimation(1, 0, 1, 1,
             Animation.RELATIVE_TO_PARENT, 0.5f, Animation.RELATIVE_TO_PARENT, 0.5f);
@@ -29,12 +31,12 @@ public class Layer3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layer3);
 
-        //  quizButton = (Button) findViewById(R.id.quizButton7);
-        // quizButton.setOnClickListener(new View.OnClickListener() {
-        //    public void onClick(View v) {
-        //       startActivity(new Intent(Layer1.this, Quiz7.class));
-        //  }
-        //});
+        homeButton = (ImageButton) findViewById(R.id.imageButton1);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(Layer3.this, MainActivity.class));
+            }
+        });
 
         initView();
 
