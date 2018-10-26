@@ -21,6 +21,9 @@ public class HomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
+        //each layer's image button is created
+        //an listener is build for each to take them to its intended class
+
         imageButton1 = findViewById(R.id.imageButton1);
         imageButton1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

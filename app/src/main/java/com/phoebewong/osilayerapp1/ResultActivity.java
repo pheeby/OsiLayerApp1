@@ -15,7 +15,7 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         Intent intent = getIntent();
-        String result = intent.getStringExtra(Quiz.EXTRA_SCORE);
+        String result = Integer.toString(intent.getIntExtra(Quiz.EXTRA_SCORE, Integer.MAX_VALUE));
         resultTextView = findViewById(R.id.resultTextView);
         resultTextView.setText(result +" out of 9");
     }

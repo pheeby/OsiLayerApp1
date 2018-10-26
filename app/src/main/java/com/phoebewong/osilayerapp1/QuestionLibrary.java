@@ -18,10 +18,10 @@ public class QuestionLibrary {
     private String mChoices [][] = {
             {"Access Control", "Flow Control","Error Control","Physical Addressing"},
             {"Email Services", "Frame Division", "File Making", "None of the Above"},
-            {"7th Layer", "7th Layer", "5th Layer", "4th Layer"},
+            {"7th Layer", "6th Layer", "5th Layer", "4th Layer"},
             {"Physical Layer", "Data Link Layer", "Network Layer", "Transport Layer"},
             {"Node to node communication", "Source to destination", "Hop to hop communication", "Both b and C"},
-            {"Physical, Transport, Network, Session"},
+            {"Physical", "Transport", "Network", "Session"},
             {"Data Link", "Transport", "Physical", "Presentation"},
             {"Application, Presentation, Session, Transport, Network, Data Link, Physical", "Session, Presentation, Data Transport, MAC, Network, Physical","Physical, Data Link, Network, Transport, Session, Presentation, Application","Presentation, Application, Session, Network, Transport, Data Link, Physical"},
             {"IP", "FTAM","TCP AND UDP", "TFTP"}
