@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class ResultActivity extends AppCompatActivity {
 
     TextView resultTextView;
+    TextView congratsTextView;
     ImageButton homeButton;
 
     @Override
@@ -29,7 +30,9 @@ public class ResultActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String result = Integer.toString(intent.getIntExtra(Quiz.EXTRA_SCORE, Integer.MAX_VALUE));
         resultTextView = findViewById(R.id.resultTextView);
-        resultTextView.setText(result +" out of 9");
+        resultTextView.setText("Your score is: " + result +" out of 9");
+        congratsTextView = findViewById(R.id.congTextView);
+        congratsTextView.setText("Congratulations! You've finished your quiz!");
 
 
     }
