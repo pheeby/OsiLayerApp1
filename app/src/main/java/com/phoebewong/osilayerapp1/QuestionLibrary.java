@@ -13,7 +13,7 @@ public class QuestionLibrary {
             "Network layer is responsible for the __________ " ,
             "Routers operate at which layer of the OSI model? __________",
             "Bits are packaged into frames at which layer of the OSI model?",
-            "The layers of the OSI model, from the top down, are:  __________",
+            "How many layers are there in the OSI Model?",
             "Which of the following are transport layer protocols?",
 
     };
@@ -26,7 +26,7 @@ public class QuestionLibrary {
             {"Node to node communication", "Source to destination", "Hop to hop communication", "Both b and C"},
             {"Physical", "Transport", "Network", "Session"},
             {"Data Link", "Transport", "Physical", "Presentation"},
-            {"Application, Presentation, Session, Transport, Network, Data Link, Physical", "Session, Presentation, Data Transport, MAC, Network, Physical","Physical, Data Link, Network, Transport, Session, Presentation, Application","Presentation, Application, Session, Network, Transport, Data Link, Physical"},
+            {"8","7","6","5"},
             {"IP", "FTAM","TCP AND UDP", "TFTP"}
     };
 
@@ -38,7 +38,7 @@ public class QuestionLibrary {
             "Source to destination",
             "Network",
             "Data Link",
-            "Application, Presentation, Session, Transport, Network, Data Link, Physical",
+            "7",
             "TCP AND UDP"
 
     };
