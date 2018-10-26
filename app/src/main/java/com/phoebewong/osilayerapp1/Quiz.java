@@ -125,7 +125,7 @@ public class Quiz extends AppCompatActivity {
     }
     //this prints the scores at the top of the page
     private void updateScore(int point) {
-        mScoreView.setText("" + mScore);
+        mScoreView.setText("Your current score: " + "\n" + mScore);
     }
 }
 
