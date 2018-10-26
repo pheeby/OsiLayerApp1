@@ -2,9 +2,6 @@ package com.phoebewong.osilayerapp1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
@@ -32,7 +29,7 @@ public class Layer4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layer4);
 
-        homeButton = (ImageButton) findViewById(R.id.imageButton1);
+        homeButton = (ImageButton) findViewById(R.id.imageButton2);
         homeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(Layer4.this, MainActivity.class));
