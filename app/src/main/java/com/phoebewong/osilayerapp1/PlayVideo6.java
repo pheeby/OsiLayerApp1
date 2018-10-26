@@ -17,7 +17,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 import android.graphics.Bitmap.Config;
 import android.widget.Button;
 
-public class PlayVideo1 extends YouTubeBaseActivity {
+public class PlayVideo6 extends YouTubeBaseActivity {
 
     private static final String TAG = "videoPlay";
 
@@ -38,7 +38,7 @@ public class PlayVideo1 extends YouTubeBaseActivity {
             public void onInitializationSuccess(Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.d(TAG, "onClick: Done initializing");
 
-                youTubePlayer.loadVideo("qSk5SLrg7Yg");
+                youTubePlayer.loadVideo("cj4OxZRJUdw");
             }
 
             @Override
@@ -58,4 +58,5 @@ public class PlayVideo1 extends YouTubeBaseActivity {
         });
 
     }
+
 }

@@ -20,6 +20,7 @@ public class Layer4 extends AppCompatActivity {
     ImageView frontTransLayer;
     ImageView backTransLayer;
     ImageButton homeButton;
+    Button videoButton4;
 
     ScaleAnimation sato0 = new ScaleAnimation(1, 0, 1, 1,
             Animation.RELATIVE_TO_PARENT, 0.5f, Animation.RELATIVE_TO_PARENT, 0.5f);
@@ -35,6 +36,13 @@ public class Layer4 extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(Layer4.this, MainActivity.class));
+            }
+        });
+
+        videoButton4 = (Button) findViewById(R.id.videoButton4);
+        videoButton4.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(Layer4.this, PlayVideo4.class));
             }
         });
 

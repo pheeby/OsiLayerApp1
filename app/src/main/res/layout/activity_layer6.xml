@@ -37,4 +37,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home_icon" />
 
+    <Button
+        android:id="@+id/videoButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
