@@ -17,7 +17,7 @@ public class Layer5 extends AppCompatActivity {
     ImageView frontSessionLayer;
     ImageView backSessionLayer;
     ImageButton homeButton;
-    Button videoButton5;
+    ImageButton videoButton5;
 
     ScaleAnimation sato0 = new ScaleAnimation(1, 0, 1, 1,
             Animation.RELATIVE_TO_PARENT, 0.5f, Animation.RELATIVE_TO_PARENT, 0.5f);
@@ -28,14 +28,14 @@ public class Layer5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layer5);
-        homeButton = (ImageButton) findViewById(R.id.imageButton2);
+        homeButton = (ImageButton) findViewById(R.id.homeImageButton5);
         homeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                startActivity(new Intent(Layer5.this, MainActivity.class));
           }
         });
 
-        videoButton5 = (Button) findViewById(R.id.videoButton5);
+        videoButton5 = (ImageButton) findViewById(R.id.videoImageButton5);
         videoButton5.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Layer5.this, PlayVideo5.class));
@@ -79,8 +79,8 @@ public class Layer5 extends AppCompatActivity {
     }
 
     private void initView() {
-        frontSessionLayer = (ImageView) findViewById(R.id.imageView1);
-        backSessionLayer = (ImageView) findViewById(R.id.imageView2);
+        frontSessionLayer = (ImageView) findViewById(R.id.sessImageView1);
+        backSessionLayer = (ImageView) findViewById(R.id.sessImageView2);
         showFrontSessionLayer();
         sato0.setDuration(300);
         sato1.setDuration(300);

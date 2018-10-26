@@ -19,6 +19,7 @@ public class Quiz extends AppCompatActivity {
     private String mAnswer;
     private int mScore = 0;
     private int mQuestionNumber = 0;
+    public static final String EXTRA_SCORE = "SCORE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,7 +111,7 @@ public class Quiz extends AppCompatActivity {
         mQuestionNumber++;
         if (mQuestionNumber > 8) {
             Intent resultIntent = new Intent(this, ResultActivity.class);
-            resultIntent.putExtra("SCORE", mScore);
+            resultIntent.putExtra(EXTRA_SCORE, mScore);
             startActivity(resultIntent);
         }
     }

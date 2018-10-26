@@ -7,7 +7,7 @@
     tools:context=".Layer4">
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/transImageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/trans_sq" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/transImageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/trans_det" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/homeImageButton4"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:layout_marginLeft="8dp"
@@ -37,15 +37,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home_icon" />
 
-    <Button
-        android:id="@+id/videoButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Video"
+    <ImageButton
+        android:id="@+id/videoImageButton4"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/video" />
 
 </android.support.constraint.ConstraintLayout>

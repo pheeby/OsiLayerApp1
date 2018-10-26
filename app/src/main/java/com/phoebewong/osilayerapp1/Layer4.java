@@ -17,7 +17,7 @@ public class Layer4 extends AppCompatActivity {
     ImageView frontTransLayer;
     ImageView backTransLayer;
     ImageButton homeButton;
-    Button videoButton4;
+    ImageButton videoButton4;
 
     ScaleAnimation sato0 = new ScaleAnimation(1, 0, 1, 1,
             Animation.RELATIVE_TO_PARENT, 0.5f, Animation.RELATIVE_TO_PARENT, 0.5f);
@@ -29,14 +29,14 @@ public class Layer4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layer4);
 
-        homeButton = (ImageButton) findViewById(R.id.imageButton2);
+        homeButton = (ImageButton) findViewById(R.id.homeImageButton4);
         homeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(Layer4.this, MainActivity.class));
             }
         });
 
-        videoButton4 = (Button) findViewById(R.id.videoButton4);
+        videoButton4 = (ImageButton) findViewById(R.id.videoImageButton4);
         videoButton4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Layer4.this, PlayVideo4.class));
@@ -79,8 +79,8 @@ public class Layer4 extends AppCompatActivity {
     }
 
     private void initView() {
-        frontTransLayer = (ImageView) findViewById(R.id.imageView1);
-        backTransLayer = (ImageView) findViewById(R.id.imageView2);
+        frontTransLayer = (ImageView) findViewById(R.id.transImageView1);
+        backTransLayer = (ImageView) findViewById(R.id.transImageView2);
         showFrontTransLayer();
         sato0.setDuration(300);
         sato1.setDuration(300);

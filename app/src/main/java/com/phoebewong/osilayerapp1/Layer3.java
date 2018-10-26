@@ -17,7 +17,7 @@ public class Layer3 extends AppCompatActivity {
     ImageView frontNetworkLayer;
     ImageView backNetworkLayer;
     ImageButton homeButton;
-    Button videoButton3;
+    ImageButton videoButton3;
 
     ScaleAnimation sato0 = new ScaleAnimation(1, 0, 1, 1,
             Animation.RELATIVE_TO_PARENT, 0.5f, Animation.RELATIVE_TO_PARENT, 0.5f);
@@ -29,14 +29,14 @@ public class Layer3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layer3);
 
-        homeButton = (ImageButton) findViewById(R.id.imageButton2);
+        homeButton = (ImageButton) findViewById(R.id.homeImageButton3);
         homeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(Layer3.this, MainActivity.class));
             }
         });
 
-        videoButton3 = (Button) findViewById(R.id.videoButton3);
+        videoButton3 = (ImageButton) findViewById(R.id.videoImageButton3);
         videoButton3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Layer3.this, PlayVideo3.class));
@@ -80,8 +80,8 @@ public class Layer3 extends AppCompatActivity {
     }
 
     private void initView() {
-        frontNetworkLayer = (ImageView) findViewById(R.id.imageView1);
-        backNetworkLayer = (ImageView) findViewById(R.id.imageView2);
+        frontNetworkLayer = (ImageView) findViewById(R.id.netImageView1);
+        backNetworkLayer = (ImageView) findViewById(R.id.netImageView2);
         showFrontNetworkLayer();
         sato0.setDuration(300);
         sato1.setDuration(300);

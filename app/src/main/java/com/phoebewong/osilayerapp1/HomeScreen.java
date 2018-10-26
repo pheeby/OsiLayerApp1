@@ -28,7 +28,7 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
-        imageButton2 = findViewById(R.id.imageButton2);
+        imageButton2 = findViewById(R.id.homeImageButton7);
         imageButton2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(HomeScreen.this, Layer2.class));
