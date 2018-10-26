@@ -29,7 +29,7 @@ public class Layer6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layer6);
 
-        homeButton = (ImageButton) findViewById(R.id.homeImageButton7);
+        homeButton = (ImageButton) findViewById(R.id.homeImageButton6);
         homeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(Layer6.this, MainActivity.class));

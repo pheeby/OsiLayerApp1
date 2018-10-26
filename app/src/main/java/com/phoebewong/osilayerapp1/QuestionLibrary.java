@@ -2,6 +2,9 @@ package com.phoebewong.osilayerapp1;
 
 public class QuestionLibrary {
 
+    //this is the library that holds all the questions and answers
+    //this is read by the Quiz class to decide which answers are right and wrong
+
     private String mQuestions[] = {
             "Parameter that is normally achieved through a trailer added to end of frame is __________" ,
             "Application layer provides basis for __________",
@@ -39,6 +42,8 @@ public class QuestionLibrary {
             "TCP AND UDP"
 
     };
+
+    //this is also where the Quiz class will get the question and choices from
 
     public String getQuestion(int a) {
         String question = mQuestions[a];

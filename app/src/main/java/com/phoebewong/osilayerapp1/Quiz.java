@@ -34,6 +34,12 @@ public class Quiz extends AppCompatActivity {
 
         updateQuestion();
 
+        //when buttons are clicked and don't match the answer provided
+        //a toast pops up and shows "wrong", if it matches the answer provided, "correct" pops up
+        //if it's correct, the mScore is also updated to be printed later
+        //it also moves on onto the next question as it calls the method updateQuestion()
+        //updateQuestion() is created below but called after each multiple choice is done
+
         mButtonChoice1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -100,6 +106,8 @@ public class Quiz extends AppCompatActivity {
         });
     }
 
+    //after each question is answered, this method is called to increment the mQuestionNumber
+    //this means that the next question will be printed
 
     private void updateQuestion() {
         mQuestionView.setText(questionLibrary.getQuestion(mQuestionNumber));
@@ -115,7 +123,7 @@ public class Quiz extends AppCompatActivity {
             startActivity(resultIntent);
         }
     }
-
+    //this prints the scores at the top of the page
     private void updateScore(int point) {
         mScoreView.setText("" + mScore);
     }

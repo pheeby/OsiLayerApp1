@@ -80,8 +80,8 @@ public class Layer7 extends AppCompatActivity {
     }
 
     private void initView() {
-        frontAppLayer = (ImageView) findViewById(R.id.presImageView1);
-        backAppLayer = (ImageView) findViewById(R.id.presImageView2);
+        frontAppLayer = (ImageView) findViewById(R.id.appImageView1);
+        backAppLayer = (ImageView) findViewById(R.id.appImageView2);
         showFrontAppLayer();
         sato0.setDuration(300);
         sato1.setDuration(300);

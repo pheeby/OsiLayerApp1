@@ -30,6 +30,9 @@ public class PlayVideo1 extends YouTubeBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_video1);
 
+        //when button is clicked, the loaded video will play
+        //it also prints the string msg in Log.d to ensure the system is loading correctly
+
         Log.d(TAG, "OnCreate: Starting.");
         mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.youtubePlay);
         btnPlay = (Button) findViewById(R.id.btnPlay);
@@ -46,6 +49,9 @@ public class PlayVideo1 extends YouTubeBaseActivity {
                 Log.d(TAG, "fail to initialise");
             }
         };
+
+        //the API key is coded with this appilication's SHA1 to ensure we have access
+        //to the youtube API and can play the video from this application
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
 
